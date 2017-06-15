@@ -1,7 +1,8 @@
-# Clone app
-# Enable in settings.py
+1. Clone app
 
-# Add to geonode/urls.py before layers/ ::
+2. Enable in settings.py
+
+3. Add to geonode/urls.py before layers/ ::
     
     url(r'^layers/(?P<layername>\d+)$', 'geonode.layer_by_id.views.layer_detail', name="layer_detail"),
     
