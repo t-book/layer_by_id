@@ -1,0 +1,2 @@
+# Add to geonode/urls.py before layers/
+url(r'^layers/(?P<layername>\d+)$', 'geonode.layer_by_id.views.layer_detail', name="layer_detail"),
