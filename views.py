@@ -20,11 +20,6 @@ _PERMISSION_MSG_METADATA = _(
 _PERMISSION_MSG_VIEW = _("You are not permitted to view this layer")
 
 
-
-
-def index(request,layername):
-    return HttpResponse('ok')
-
 def _resolve_layer(request, typename, permission='base.view_resourcebase',
                    msg=_PERMISSION_MSG_GENERIC, **kwargs):
     """
